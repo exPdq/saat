@@ -62,7 +62,7 @@
     position: relative;
 }
 .clock span::after{
-    font-size: 17px;
+    font-size: 21px;
     position: absolute;
     bottom: -5px;
     left: 50%;
