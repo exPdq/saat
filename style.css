@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #43aaf0, #cb47ff, #fffb02);
+    color: #fff;
+    position: relative;
+}
+.container{
+   width: 1100px;
+   height: 400px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+.clock{
+    width: 110%;
+    height: 100%;
+    background: rgba(255, 0, 0, 0);
+    border-radius: 60px;
+    box-shadow: -6px 0px 90px 20px rgba(255, 255, 255, 0.719);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(99px);
+}
+.container::before{
+    content: '';
+    width: 310px;
+    height: 310px;
+    background: #6f00ff;
+    border-radius: 30px;
+    position: absolute;
+    left: -110px;
+    top: 210px;
+    z-index: -1;
+}
+.container::after{
+    content: '';
+    width: 300px;
+    height: 300px;
+    background: #ff00c8;
+    border-radius: 50%;
+    position: absolute;
+    right: -220px;
+    bottom: 210px;
+    z-index: -1;
+}
+.clock span{
+    font-size: 210px;
+    font-family:fantasy;
+    color: #ffffff;
+    width: 220px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+.clock span::after{
+    font-size: 17px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%); 
+}
+#hrs::after{
+    content: 'SAAT';
+}
+#min::after{
+    content: 'DAKİKA';
+}
+#sec::after{
+    content: 'SANİYE';
+}
